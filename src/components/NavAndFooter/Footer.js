@@ -26,7 +26,7 @@ const Footer = () => {
         
             <div>
                 <p className="text-center text-black p-4">© 2023 Copyright:<a className="text-black" href="https://tailwind-elements.com/">  SugarSmart</a>
-                <p><a className="text-black" href="/TermsofService">  Terms of Service</a> || <a className="text-black" href="/PrivacyPolicy">  Privacy Policy</a> || <a className="text-black" href="mailto:sugarsmart.sspc@gmail.com">  Contact Us</a></p>
+                <p><a className="text-black" href="https://prediabetescalculatormanager.onrender.com/TermsofService">  Terms of Service</a> || <a className="text-black" href="https://prediabetescalculatormanager.onrender.com/PrivacyPolicy">  Privacy Policy</a> || <a className="text-black" href="mailto:sugarsmart.sspc@gmail.com">  Contact Us</a></p>
                 </p>
             </div>
         </footer>
