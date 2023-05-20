@@ -1,6 +1,17 @@
 import Logo from "../../assets/Logo.png";
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const navigate = useNavigate();
+
+    const handleTerms = () =>{
+        navigate("/TermsofService");
+    }
+
+    const handlePolicy = () =>{
+        navigate("/PrivacyPolicy");
+    }
+
     return ( 
         <footer className="text-center lg:text-left w-full bg-gray-100">
             <div className="container p-6 text-gray-800">
@@ -26,7 +37,7 @@ const Footer = () => {
         
             <div>
                 <p className="text-center text-black p-4">© 2023 Copyright:<a className="text-black" href="https://tailwind-elements.com/">  SugarSmart</a>
-                <p><a className="text-black" href="https://prediabetescalculatormanager.onrender.com/TermsofService">  Terms of Service</a> || <a className="text-black" href="https://prediabetescalculatormanager.onrender.com/PrivacyPolicy">  Privacy Policy</a> || <a className="text-black" href="mailto:sugarsmart.sspc@gmail.com">  Contact Us</a></p>
+                <p><a className="text-black"  onClick={handleTerms}>  Terms of Service</a> || <a className="text-black" onClick={handlePolicy}>  Privacy Policy</a> || <a className="text-black" href="mailto:sugarsmart.sspc@gmail.com">  Contact Us</a></p>
                 </p>
             </div>
         </footer>
