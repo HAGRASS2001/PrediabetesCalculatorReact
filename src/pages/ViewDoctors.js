@@ -30,7 +30,7 @@ const ViewDoctorsPage = () => {
                         throw Error(data.error);
                     }
                     
-                    setDoctor(data);
+                    setDoctor(data.doctors);
                     setIsLoading(false);
                 }catch(err){
                     console.log(err.message);
