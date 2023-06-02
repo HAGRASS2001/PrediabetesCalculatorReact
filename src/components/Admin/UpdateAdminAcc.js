@@ -69,7 +69,7 @@ const UpdateAdminAcc = (props) => {
             if(formData.password != ""){
                 formData.adminID = props.admin._id;
                 try {
-                    const response = await fetch('http://localhost:3000/admin/updateAdmin', {
+                    const response = await fetch('https://prediabetescalculatornodejs.onrender.com/admin/updateAdmin', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
