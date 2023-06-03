@@ -122,6 +122,7 @@ const UpdateAdminAcc = (props) => {
                         <RoleSelectInput
                             name="role"
                             type="text"
+                            editable = {false}
                             defaultValue = {props.admin.role}
                             register={register}
                             validation={{ required: true }}
