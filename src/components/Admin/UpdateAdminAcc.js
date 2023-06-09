@@ -25,6 +25,7 @@ const UpdateAdminAcc = (props) => {
     ];
 
     const submitHandler = async (formData) => {
+        formData.role = props.admin.role;
         if(formData.Newpassword != "" || formData.Repassword != ""){
             formData.adminID = props.admin._id;
             console.log(formData);
@@ -119,15 +120,9 @@ const UpdateAdminAcc = (props) => {
                     </div>
                     <div>
                         <label className="text-left mb-2 ml-1" >Role</label>
-                        <RoleSelectInput
-                            name="role"
-                            type="text"
-                            editable = { true }
-                            defaultValue = {props.admin.role}
-                            register={register}
-                            validation={{ required: true }}
-                            options={roles} 
-                        />
+                        <p className = "placeholder-black px-4 py-2 border-2 mt-2 border-gray-300 outline-none  active:bg-gray-400 focus:outline-none  focus:ring-gray-400 hover:bg-cyan-50 rounded-md bg-white">
+                            {props.admin.role}
+                        </p>
                     </div>
                 </div>  
 
